@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
+  <!-- Ombre portée -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="hull-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a3010"/>
+      <stop offset="100%" stop-color="#2a1005"/>
+    </linearGradient>
+    <linearGradient id="sail-main" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0e8d0"/>
+      <stop offset="100%" stop-color="#c8b880"/>
+    </linearGradient>
+    <linearGradient id="sail-fore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8dcc0"/>
+      <stop offset="100%" stop-color="#b8a870"/>
+    </linearGradient>
+    <linearGradient id="water-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a4a7a"/>
+      <stop offset="100%" stop-color="#0d2a4a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Vagues / eau -->
+  <ellipse cx="60" cy="118" rx="52" ry="8" fill="url(#water-grad)" opacity="0.6"/>
+  <path d="M10,116 Q25,112 40,116 Q55,120 70,116 Q85,112 100,116 Q110,118 112,116" 
+        stroke="#4a8ab0" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M15,120 Q30,117 45,120 Q60,123 75,120 Q90,117 105,120" 
+        stroke="#3a7aa0" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- COQUE -->
+  <path d="M20,105 Q18,112 22,118 Q40,125 60,126 Q80,125 98,118 Q102,112 100,105 Z" 
+        fill="url(#hull-grad)" stroke="#8b5020" stroke-width="1.5"/>
+  <!-- Ligne de flottaison dorée -->
+  <path d="M22,110 Q40,116 60,117 Q80,116 98,110" 
+        stroke="#c8a040" stroke-width="1.2" fill="none"/>
+  <!-- Flanc coque (lisses) -->
+  <path d="M24,105 Q40,108 60,109 Q80,108 96,105" 
+        stroke="#7a4010" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <!-- Sabords (canons) -->
+  <rect x="28" y="106" width="6" height="4" rx="1" fill="#1a0a00" opacity="0.8"/>
+  <rect x="40" y="107" width="6" height="4" rx="1" fill="#1a0a00" opacity="0.8"/>
+  <rect x="52" y="108" width="6" height="4" rx="1" fill="#1a0a00" opacity="0.8"/>
+  <rect x="64" y="108" width="6" height="4" rx="1" fill="#1a0a00" opacity="0.8"/>
+  <rect x="76" y="107" width="6" height="4" rx="1" fill="#1a0a00" opacity="0.8"/>
+  <rect x="86" y="106" width="6" height="4" rx="1" fill="#1a0a00" opacity="0.8"/>
+  <!-- Proue (avant) -->
+  <path d="M20,105 Q14,100 16,94 Q20,90 26,92 Q24,98 26,105" 
+        fill="#4a2008" stroke="#7a4010" stroke-width="1"/>
+  <!-- Poupe (arrière avec lanterne) -->
+  <path d="M100,105 Q106,100 104,94 Q100,90 94,92 Q96,98 94,105" 
+        fill="#4a2008" stroke="#7a4010" stroke-width="1"/>
+  <!-- Lanterne poupe -->
+  <rect x="101" y="88" width="5" height="7" rx="1" fill="#c8a040" opacity="0.9"/>
+  <rect x="102" y="89" width="3" height="5" rx="1" fill="#ffe080" opacity="0.8"/>
+
+  <!-- PONT -->
+  <path d="M26,105 Q40,100 60,99 Q80,100 94,105" 
+        stroke="#6a3810" stroke-width="2" fill="none"/>
+  <!-- Bastingage -->
+  <path d="M30,103 L30,98 M40,103 L40,97 M50,103 L50,96 M60,103 L60,96 M70,103 L70,96 M80,103 L80,97 M90,103 L90,98" 
+        stroke="#5a2808" stroke-width="1" opacity="0.7"/>
+  <path d="M30,98 Q50,94 60,94 Q70,94 90,98" 
+        stroke="#5a2808" stroke-width="0.8" fill="none" opacity="0.6"/>
+
+  <!-- MÂT PRINCIPAL (centre) -->
+  <line x1="60" y1="99" x2="60" y2="18" stroke="#3a1a05" stroke-width="3"/>
+  <!-- Hune (plateforme) -->
+  <rect x="53" y="55" width="14" height="5" rx="2" fill="#4a2008" stroke="#6a3010" stroke-width="1"/>
+  <!-- Vergue principale (basse) -->
+  <line x1="28" y1="72" x2="92" y2="72" stroke="#3a1a05" stroke-width="2"/>
+  <!-- Vergue principale (haute) -->
+  <line x1="36" y1="45" x2="84" y2="45" stroke="#3a1a05" stroke-width="1.5"/>
+  <!-- Vergue de cacatois -->
+  <line x1="44" y1="28" x2="76" y2="28" stroke="#3a1a05" stroke-width="1"/>
+
+  <!-- GRANDE VOILE (basse) -->
+  <path d="M30,72 Q44,78 60,79 Q76,78 90,72 L88,60 Q72,65 60,65 Q48,65 32,60 Z" 
+        fill="url(#sail-main)" stroke="#a08040" stroke-width="0.8" opacity="0.95"/>
+  <!-- Plis voile principale -->
+  <line x1="45" y1="72" x2="44" y2="61" stroke="#a08040" stroke-width="0.5" opacity="0.6"/>
+  <line x1="60" y1="79" x2="60" y2="65" stroke="#a08040" stroke-width="0.5" opacity="0.6"/>
+  <line x1="75" y1="72" x2="76" y2="61" stroke="#a08040" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- VOILE HAUTE -->
+  <path d="M38,45 Q52,50 60,51 Q68,50 82,45 L80,34 Q68,38 60,38 Q52,38 40,34 Z" 
+        fill="url(#sail-main)" stroke="#a08040" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- CACATOIS (voile tout en haut) -->
+  <path d="M46,28 Q54,32 60,33 Q66,32 74,28 L72,21 Q66,24 60,24 Q54,24 48,21 Z" 
+        fill="url(#sail-fore)" stroke="#a08040" stroke-width="0.7" opacity="0.85"/>
+
+  <!-- MÂT DE MISAINE (avant) -->
+  <line x1="38" y1="96" x2="34" y2="32" stroke="#3a1a05" stroke-width="2.5"/>
+  <!-- Vergue misaine basse -->
+  <line x1="14" y1="68" x2="60" y2="62" stroke="#3a1a05" stroke-width="1.8"/>
+  <!-- Vergue misaine haute -->
+  <line x1="18" y1="50" x2="56" y2="45" stroke="#3a1a05" stroke-width="1.2"/>
+
+  <!-- VOILE MISAINE (basse) -->
+  <path d="M16,68 Q28,74 44,70 Q54,66 58,62 L54,52 Q44,56 34,56 Q24,58 18,54 Z" 
+        fill="url(#sail-fore)" stroke="#a08040" stroke-width="0.8" opacity="0.9"/>
+  <!-- VOILE MISAINE (haute) -->
+  <path d="M20,50 Q30,55 40,52 Q50,49 54,46 L50,38 Q42,42 34,42 Q26,42 22,40 Z" 
+        fill="url(#sail-fore)" stroke="#a08040" stroke-width="0.7" opacity="0.85"/>
+
+  <!-- BEAUPRÉ (mât oblique avant) -->
+  <line x1="20" y1="94" x2="4" y2="74" stroke="#3a1a05" stroke-width="2"/>
+  <!-- Voile beaupré -->
+  <path d="M6,74 Q14,80 22,94 L18,96 Q10,84 4,76 Z" 
+        fill="url(#sail-fore)" stroke="#a08040" stroke-width="0.7" opacity="0.8"/>
+
+  <!-- MÂT D'ARTIMON (arrière) -->
+  <line x1="82" y1="98" x2="84" y2="42" stroke="#3a1a05" stroke-width="2"/>
+  <!-- Voile latine artimon -->
+  <path d="M84,42 L84,85 Q88,80 96,70 Q94,60 90,52 Z" 
+        fill="url(#sail-fore)" stroke="#a08040" stroke-width="0.7" opacity="0.85"/>
+
+  <!-- PAVILLON NOIR en haut du mât principal -->
+  <rect x="60" y="13" width="16" height="10" rx="1" fill="#1a1a1a" stroke="#333" stroke-width="0.5"/>
+  <!-- Tête de mort simplifiée -->
+  <circle cx="66" cy="17" r="2.5" fill="#fff" opacity="0.9"/>
+  <line x1="63" y1="21" x2="65" y2="19" stroke="#fff" stroke-width="0.8" opacity="0.9"/>
+  <line x1="69" y1="21" x2="67" y2="19" stroke="#fff" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- Haubans (cordages) -->
+  <line x1="60" y1="18" x2="26" y2="99" stroke="#4a2a08" stroke-width="0.6" opacity="0.5"/>
+  <line x1="60" y1="18" x2="94" y2="99" stroke="#4a2a08" stroke-width="0.6" opacity="0.5"/>
+  <line x1="60" y1="55" x2="26" y2="99" stroke="#4a2a08" stroke-width="0.5" opacity="0.4"/>
+  <line x1="60" y1="55" x2="94" y2="99" stroke="#4a2a08" stroke-width="0.5" opacity="0.4"/>
+  <line x1="34" y1="32" x2="18" y2="96" stroke="#4a2a08" stroke-width="0.5" opacity="0.4"/>
+  <line x1="34" y1="32" x2="54" y2="98" stroke="#4a2a08" stroke-width="0.5" opacity="0.4"/>
+</svg>
